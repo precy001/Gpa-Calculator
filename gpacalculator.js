@@ -69,6 +69,7 @@ let course4 = document.querySelector('.js-course-4')
 
 var textInputTags = document.querySelectorAll('input[type="text"]');
 const gpaContainer = document.querySelector('.js-gpa')
+const wholeContainer = document.querySelector('.gpa')
 const sentence = document.querySelector('.gpa')
 
  function calculateGpa(){
@@ -290,8 +291,8 @@ const sentence = document.querySelector('.gpa')
 
      console.log(approxGPA)
 
-     if(approxGPA === NaN){
-        alert("fill out the empty spaces")
+     if(isNaN(GPA)){
+        wholeContainer.innerHTML = 'please fill in the course units';
      }
  }
  
