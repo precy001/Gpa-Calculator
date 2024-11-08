@@ -286,13 +286,15 @@ const sentence = document.querySelector('.gpa')
 
      const GPA = (totalPoints/totalUnits)
      const approxGPA = parseFloat(GPA.toFixed(2));
-     gpaContainer.innerHTML = approxGPA
-     sentence.classList.add('show-gpa')
+    
 
      console.log(approxGPA)
 
      if(isNaN(GPA)){
         wholeContainer.innerHTML = 'please fill in the course units';
+     }else{
+       gpaContainer.innerHTML = approxGPA
+       sentence.classList.add('show-gpa')
      }
  }
  
